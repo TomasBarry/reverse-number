@@ -101,4 +101,5 @@ module.exports = function(n) {
   }
   else {
     return reverseN(n, 0);
+  }
 };
