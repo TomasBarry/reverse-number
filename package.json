@@ -1,0 +1,24 @@
+{
+  "name": "reverse-number",
+  "version": "1.0.0",
+  "description": "Reverse a number without having to do any conversions!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasBarry/reverse-number.git"
+  },
+  "keywords": [
+    "reverse",
+    "number",
+    "efficiency"
+  ],
+  "author": "Tomas Barry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomasBarry/reverse-number/issues"
+  },
+  "homepage": "https://github.com/TomasBarry/reverse-number#readme"
+}
