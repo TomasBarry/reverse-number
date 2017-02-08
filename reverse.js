@@ -99,6 +99,9 @@ module.exports = function(n) {
   if (typeof n !== 'number') {
     throw new Error(`${n} is not a number`);
   }
+  else if (n < 0) {
+    throw new Error(`${n} is less than 0`);
+  }
   else {
     return reverseN(n, 0);
   }
