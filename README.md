@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/reverse-number)
+
 # reverse-number
 Reverse a number without having to do any conversions!
 
