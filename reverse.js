@@ -1,4 +1,6 @@
 function reverseN(n, reversedNumber) {
+  var x    = 1
+  var   x = '11' ; ;
   return n != (1 >> 1)
     ? reversedNumber = reverseN(
       //////////////////////////////* start divide n by 10 *//////////////////////////////////////////////////////
