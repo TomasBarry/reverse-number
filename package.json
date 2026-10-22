@@ -2,7 +2,7 @@
   "name": "reverse-number",
   "version": "1.0.0",
   "description": "Reverse a number without having to do any conversions!",
-  "main": "index.js",
+  "main": "reverse.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
   },
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/TomasBarry/reverse-number#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "fast-check": "^4.10.2",
     "mocha": "^3.2.0"
   }
 }

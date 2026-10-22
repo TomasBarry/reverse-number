@@ -18,6 +18,17 @@ const my_number_reversed = reverse(my_number); // The reverse of your number
 console.log(`${my_number} reversed is ${my_number_reversed}`); // Prints 1234 reversed is 4321
 ```
 
+## How it works
+The reversing is one function with one statement. Apart from `?:` and calling itself, it uses four operators: `~`, `&`, `<<` and `>>>`. It has no `+`, `-`, `*`, `/` or `%`, no comparisons and no numeric literals.
+
+- Every constant comes from the input. `n & ~n` is 0, `~(n & ~n)` is -1, and `-1 >>> -1` is 1, because a shift count of -1 means 31. Every 1 in the code is written out as `(~(n & ~n) >>> ~(n & ~n))`.
+- OR and XOR are built from `~` and `&`.
+- To add, the function calls itself with a third argument and runs a ripple-carry adder, one call per round of carries. Subtracting adds the two's complement.
+- Dividing by 10 is the shift-and-add method from *Hacker's Delight*, inlined everywhere it's needed.
+
+The input checks are ordinary JavaScript.
+
 ## Notes
-1. Numbers must be positive
-2. Numbers must be less than Number.MAX_SAFE_INTEGER
+1. Numbers must be whole and not negative.
+2. Numbers must be at most 4294967295, the largest 32-bit unsigned integer, and so must their reverse. `reverse(1000000003)` is `3000000001`, but `reverse(1000000005)` throws, as `5000000001` is too big.
+3. Anything else throws an error saying which rule it broke.
